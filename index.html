@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RestApi-Json-Marvel</title>
+</head>
+<body>
+    <ul id="personajes"></ul>
+    <script>
+    var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          var rs = JSON.parse(xhttp.responseText);
+          var personajes = rs.personajes;
+          var salida = '';
+          for(var i = 0; i < personajes.length; i++) {
+            salida += `<li>${personajes[i].nombre} El personajes es ${personaje[i].mutante}</li>`;
+          }
+          document.getElementById('personajes')
+            .innerHTML = salida;
+        }
+      };
+      xhttp.open("GET", "personaje.json", true);
+      xhttp.send();
+
+    </script>
+</body>
+</html>

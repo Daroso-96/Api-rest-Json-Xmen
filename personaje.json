@@ -1,0 +1,11 @@
+{
+"personajes":[
+
+ {"nombre": "Raven", "mutante" :"Mystique"},
+{"nombre": "Erick", "mutante" :"Magneto"},
+{"nombre": "Scott", "mutante" :"Cíclope"},
+{"nombre": "Ororo ", "mutante" :"Tormenta"},
+{"nombre": "Logan", "mutante" :"Wolverine"}
+]
+
+}
